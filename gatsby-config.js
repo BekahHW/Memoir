@@ -1,11 +1,11 @@
 module.exports = {
   plugins: [
     {
+      // `gatsby-theme-material-ui`,
       resolve: "gatsby-theme-blog",
       options: {},
     },
   ],
-  // Customize your site metadata:
   siteMetadata: {
     title: "Memoir Site",
     author: "Bekah Hawrot Weigel",
