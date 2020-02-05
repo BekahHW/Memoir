@@ -5649,6 +5649,17 @@ gatsby-plugin-feed@^2.3.26:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
+gatsby-plugin-feed@^2.3.27:
+  version "2.3.27"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.3.27.tgz#c3dd793bb22d62563687350adfd7cedbd84d826b"
+  integrity sha512-YdYyMi2k1d2vJtHq7GCFilWqHGBP74kMfv4vEjbGKnHwjUN+hu1u0ZbZHCO56OLz/Yyi+rG+pNdTDlbDFWD7lw==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+    "@hapi/joi" "^15.1.1"
+    fs-extra "^8.1.0"
+    lodash.merge "^4.6.2"
+    rss "^1.2.2"
+
 gatsby-plugin-mdx@^1.0.67:
   version "1.0.67"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.0.67.tgz#1c2d80606a4c6b112164f46fad0a81b146603884"

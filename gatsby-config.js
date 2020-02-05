@@ -1,5 +1,7 @@
 module.exports = {
   plugins: [
+    `gatsby-plugin-feed`,
+    `gatsby-theme-material-ui`,
     {
       // `gatsby-theme-material-ui`,
       resolve: "gatsby-theme-blog",

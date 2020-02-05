@@ -48,7 +48,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // ...
 
   // Create blog-list pages
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = result.data.allBlogPost.edges
   const postsPerPage = 6
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -64,6 +64,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 }
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
